@@ -33,10 +33,10 @@ html,
     height: 40px;
 }
 
-body {
+.about-body  {
   background-image: url(/assets/images/backgroundhp.png);
 }
-.navbar {
+.about-navbar{
   width: 1280px;
   height: 120px;
   box-shadow: 0 3px 10px black;
@@ -75,7 +75,7 @@ h1 {
 img {
   float: right;
 }
-span {
+span-1 {
   font-size: 70px;
 }
 p {
