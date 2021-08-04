@@ -14,12 +14,16 @@ h1 {
     margin-bottom: 40px;
 }
 
-button {
+button#learn-more {
     margin-top: 140px;
-    margin-left: 900px;
     width: 180px;
-    height:40px;
+}
+
+button {
     border-radius: 40px;
+    margin-left: 900px;
+    height:40px;
+    padding-bottom: 10px;
 }
 
 #grn-bgn {
@@ -30,10 +34,6 @@ button {
 #about-page {
     background: url("/assets/images/bg.jpeg");
     background-size: cover;
-}
-
-#learn-more {
-    padding-bottom: 10px;
 }
 
 #about-details {
@@ -52,4 +52,8 @@ button {
     color: black;
     margin-right: 120px;
     margin-left: 120px;
+}
+
+button#hide {
+    width: 100px;
 }
