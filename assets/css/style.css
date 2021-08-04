@@ -38,6 +38,7 @@ button {
     font-family: monospace;
     margin-right: 120px;
     margin-left: 120px;
+    border-radius: 20px;
 }
 
 #hidden-details {
@@ -47,6 +48,7 @@ button {
     color: black;
     margin-right: 120px;
     margin-left: 120px;
+    border-radius: 20px;
     display: none;
 }
 
