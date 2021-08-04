@@ -8,13 +8,10 @@ h1 {
 }
 
 #about-page {
-    text-align: center;
-    font-family: monospace;
-}
-
-#about-page {
-    margin-right: 120px;
-    margin-left: 120px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 button {
@@ -30,16 +27,29 @@ button {
     border-radius: 40px;
 }
 
-body {
-    background: url("/assets/images/shopping-cart.png");
+#about-page {
+    background: url("/assets/images/bg.jpeg");
     background-size: cover;
 }
 
-#button {
+#learn-more {
     padding-bottom: 10px;
 }
 
 #about-details {
     background-color: white;
-    color: black
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
+#hidden-details {
+    text-align: center;
+    font-family: monospace;
+    background-color: white;
+    color: black;
+    margin-right: 120px;
+    margin-left: 120px;
 }
