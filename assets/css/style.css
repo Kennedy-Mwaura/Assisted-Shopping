@@ -73,4 +73,8 @@ button {
 #beautiful {
   height: 300px;
 }
+.container-fluid {
+  text-align: center;
+}
+
 
