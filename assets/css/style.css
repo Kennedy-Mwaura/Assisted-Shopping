@@ -9,7 +9,7 @@ body {
   line-height: 50px;
   background-color: whitesmoke;
 }
-.logo img{
+.logo img {
   width: 300px;
   height: 120px;
   float: left;
@@ -17,12 +17,12 @@ body {
 .menu {
   display: inline-flex;
 }
-.menu li{
+.menu li {
   display: inline-block;
   padding-right: 50px;
   font-size: 30px;
 }
-.menu li a{
+.menu li a {
   padding-left: 30px;
 }
 .menu li a:hover {
@@ -35,7 +35,7 @@ body {
 h1 {
   text-align: center;
   font-size: 40px;
-  font-family: 'Merienda', cursive;
+  font-family: "Merienda", cursive;
 }
 img {
   float: right;
@@ -45,25 +45,24 @@ span {
 }
 p {
   text-align: center;
-  font-family: 'Kotta One', serif;
+  font-family: "Kotta One", serif;
 }
 button {
   background-color: blue;
   color: white;
   padding: 15px;
-  
 }
 .heading {
   height: 200px;
 }
-.image-control  {
-  width:100%;
+.image-control {
+  width: 100%;
   height: 600px;
   text-align: center;
 }
 #shopping {
   float: left;
-  width:400px ;
+  width: 400px;
   height: 274px;
   margin-top: 20px;
 }
@@ -73,4 +72,57 @@ button {
 #beautiful {
   height: 300px;
 }
-
+.ul1,
+.li1 {
+  display: inline-block;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: blue;
+}
+#row1 {
+  display: flex;
+  justify-content: center;
+  /* justify-items: center; */
+  align-content: center;
+  /* align-items: center; */
+}
+input {
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  height: 40px;
+  background-color: lavender;
+}
+#textarea {
+  border-radius: 10px;
+  margin-right: 20px;
+  background-color: lavender;
+}
+h6 {
+  color: gray;
+  font-size: small;
+  font-weight: bold;
+}
+#btn {
+  height: 10%;
+  border-radius: 10%;
+  padding: 15px 32px;
+}
+.fa-facebook {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: lightgoldenrodyellow;
+  font-size: 20px;
+}
+.fa-linkedin {
+  font-size: 20px;
+}
+.fa-slack {
+  font-size: 20px;
+}
+.fa-twitter {
+  font-size: 20px;
+}
