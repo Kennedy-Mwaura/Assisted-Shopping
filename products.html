@@ -794,13 +794,13 @@
 
                   <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                    <a class="dark-grey-text font-small">
+                    <a class="dark-grey-text font-small" id="data">
 
-                      <i class="fas fa-laptop dark-grey-text mr-2" aria-hidden="true"></i> Laptops</a>
+                      <i class="fas fa-gift dark-grey-text mr-2" aria-hidden="true"></i>  </a>
 
                     <a href=""></a>
 
-                    <span class="badge badge-danger badge-pill">43</span>
+                    <span class="badge badge-danger badge-pill" id="beauty-num"></span>
 
                     </a>
 
@@ -808,31 +808,31 @@
 
                   <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                    <a class="dark-grey-text font-small">
+                    <a class="dark-grey-text font-small" id="data-2">
 
-                      <i class="fas fa-mobile-alt dark-grey-text mr-3" aria-hidden="true"></i> Smartphone</a>
+                      <i class="fas fa-book dark-grey-text mr-3" aria-hidden="true"></i> </a>
 
-                    <span class="badge badge-danger badge-pill">32</span>
-
-                  </li>
-
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-
-                    <a class="dark-grey-text font-small">
-
-                      <i class="fas fa-tablet-alt dark-grey-text mr-3" aria-hidden="true"></i> Tablet</a>
-
-                    <span class="badge badge-danger badge-pill">18</span>
+                    <span class="badge badge-danger badge-pill" id="book-num"></span>
 
                   </li>
 
                   <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                    <a class="dark-grey-text font-small">
+                    <a class="dark-grey-text font-small" id="data-3">
 
-                      <i class="fas fa-headphones-alt dark-grey-text mr-3" aria-hidden="true"></i>Heahphones</a>
+                      <i class="fas fa-mobile-alt dark-grey-text mr-3" aria-hidden="true"></i> </a>
 
-                    <span class="badge badge-danger badge-pill">37</span>
+                    <span class="badge badge-danger badge-pill" id="phone-num"></span>
+
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+
+                    <a class="dark-grey-text font-small" id="data-4">
+
+                      <i class="fas fa-tools dark-grey-text mr-3" aria-hidden="true"></i></a>
+
+                    <span class="badge badge-danger badge-pill" id="hardware-num"></span>
 
                   </li>
 
@@ -3556,6 +3556,7 @@
     <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
     </script>
@@ -3564,20 +3565,7 @@
     <!-- Custom JS -->
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script type="text/javascript">
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        var firebaseConfig = {
-          apiKey: "AIzaSyBSmPAx5BThIyxo8mL-9nasB9NIAmJDAhU",
-          authDomain: "assisted-shopping.firebaseapp.com",
-          projectId: "assisted-shopping",
-          storageBucket: "assisted-shopping.appspot.com",
-          messagingSenderId: "111005798119",
-          appId: "1:111005798119:web:4ea77834750df772d39c42",
-          measurementId: "G-Y098QVPDCQ"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
+
         /* WOW.js init */
         new WOW().init();
         // Tooltips Initialization
