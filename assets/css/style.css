@@ -18,4 +18,7 @@ h1 {
 button {
     margin-top: 140px;
     margin-left: 950px;
+    width: 180px;
+    height:40px;
+    border-radius: 40px;
 }
