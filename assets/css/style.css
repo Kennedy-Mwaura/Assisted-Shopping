@@ -17,13 +17,13 @@ h1 {
 button#learn-more {
     margin-top: 140px;
     width: 180px;
+    padding-bottom: 10px;
 }
 
 button {
     border-radius: 40px;
     margin-left: 900px;
     height:40px;
-    padding-bottom: 10px;
 }
 
 #grn-bgn {
@@ -32,7 +32,7 @@ button {
 }
 
 #about-page {
-    background: url("/assets/images/bg.jpeg");
+    background: url("/assets/images/bg.jpeg") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -52,8 +52,11 @@ button {
     color: black;
     margin-right: 120px;
     margin-left: 120px;
+    display: none;
 }
 
 button#hide {
     width: 100px;
+    padding-bottom: 10px;
+    display: none;
 }
