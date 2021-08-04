@@ -18,9 +18,6 @@ button#learn-more {
     margin-top: 140px;
     width: 180px;
     padding-bottom: 10px;
-}
-
-button {
     border-radius: 40px;
     margin-left: 900px;
     height:40px;
@@ -56,6 +53,9 @@ button#hide {
     width: 100px;
     padding-bottom: 10px;
     display: none;
+    border-radius: 40px;
+    margin-left: 900px;
+    height:40px;
 }
 
 #header {
