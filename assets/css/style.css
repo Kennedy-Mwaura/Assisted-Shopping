@@ -26,11 +26,6 @@ button {
     height:40px;
 }
 
-#grn-bgn {
-    background-color: rgb(77, 180, 129);
-    border-radius: 40px;
-}
-
 #about-page {
     background: url("/assets/images/bg.jpeg") no-repeat center center fixed;
     background-size: cover;
@@ -59,4 +54,10 @@ button#hide {
     width: 100px;
     padding-bottom: 10px;
     display: none;
+}
+
+#header {
+    background-color: green;
+    color: black;
+    border-radius: 20px;
 }
