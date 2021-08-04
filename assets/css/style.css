@@ -22,9 +22,9 @@ body {
   padding-right: 50px;
   font-size: 30px;
 }
-.menu li a {
+/* .menu li a {
   padding-left: 30px;
-}
+} */
 .menu li a:hover {
   color: coral;
 }
@@ -83,11 +83,10 @@ button {
 #row1 {
   display: flex;
   justify-content: center;
-  /* justify-items: center; */
+
   align-content: center;
-  /* align-items: center; */
 }
-input {
+#input1 {
   border-radius: 10px;
   display: inline-block;
   margin-bottom: 20px;
