@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
@@ -106,5 +107,71 @@ button {
 }
 #beautiful {
   height: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 140px;
+    font-family:monospace;
+    font-style: Merienda bold;
+    padding-top: 40px;
+}
+
+#about-page {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+button#learn-more {
+    margin-top: 140px;
+    width: 180px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+    margin-left: 900px;
+    height:40px;
+}
+
+#about-page {
+    background: url("/assets/images/bg.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+#about-details {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    margin-right: 120px;
+    margin-left: 120px;
+    border-radius: 20px;
+}
+
+#hidden-details {
+    text-align: center;
+    font-family: monospace;
+    background-color: white;
+    color: black;
+    margin-right: 120px;
+    margin-left: 120px;
+    border-radius: 20px;
+    display: none;
+}
+
+button#hide {
+    width: 100px;
+    padding-bottom: 10px;
+    display: none;
+    border-radius: 40px;
+    margin-left: 900px;
+    height:40px;
+}
+
+#header {
+    background-color: green;
+    color: black;
+    border-radius: 20px;
 }
 
