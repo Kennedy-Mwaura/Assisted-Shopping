@@ -8,3 +8,7 @@ h1 {
     text-align: center;
 }
 
+.card {
+    margin-right: 120px;
+    margin-left: 120px;
+}
