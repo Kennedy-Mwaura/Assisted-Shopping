@@ -22,3 +22,8 @@ button {
     height:40px;
     border-radius: 40px;
 }
+
+.grn-bgn {
+    background-color: rgb(77, 180, 129);
+    border-radius: 40px;
+}
