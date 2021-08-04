@@ -4,4 +4,7 @@ h1 {
     margin-bottom: 140px;
 }
 
+.card-body {
+    text-align: center;
+}
 
