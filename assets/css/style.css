@@ -1,4 +1,4 @@
-body {
+<<<<<<< HEAD body {
   background-image: url(/assets/images/backgroundhp.png);
 }
 .navbar {
@@ -125,3 +125,38 @@ h6 {
 .fa-twitter {
   font-size: 20px;
 }
+/* =======
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+html,
+    body,
+    .intro-3 {
+      height: 100%;
+    }
+    @media (max-width: 450px) {
+      html,
+      body,
+      .intro-3 {
+        height: 820px;
+      }
+    }
+    @media (min-width: 451px) and (max-width: 740px) {
+      html,
+      body,
+      .intro-3 {
+        height: 900px;
+      }
+    }
+    @media (min-width: 800px) and (max-width: 850px) {
+      html,
+      body,
+      .intro-3 {
+        height: 950px;
+      }
+    }
+
+    nav {
+    height: 40px;
+}
+>>>>>>> 7bf9c4a6b0da008d0fed38d415295a1f12569e09 */
