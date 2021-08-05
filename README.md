@@ -31,13 +31,15 @@ Introducing Assisted Shopping. The application  that allows you to obtain produc
 
 ## Technologies Used
 
-1.HTML
+1. HTML
 
-2.CSS3 (Material Bootstrap)
+2. CSS3 (Material Bootstrap)
 
-3.JavaScript.
+3. JavaScript.
 
-4.Firebase.(Firestore)
+4. Firebase.(Firestore)
+
+5. Google sheets [link here](https://docs.google.com/spreadsheets/d/19Doa_6elnvH4nYXcHTfC6b1pC2d3bmjAJkeKxEdtcrw/edit?usp=sharing)
 
 ## Live site
 
