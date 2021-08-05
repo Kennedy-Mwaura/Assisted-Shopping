@@ -30,6 +30,7 @@ let firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
+// Initialize variables to hold data
 let data = $('#data');
 let data2 = $('#data-2');
 let data3 = $('#data-3');
@@ -38,6 +39,8 @@ let beautyNum = $('#beauty-num');
 let bookNum = $('#book-num');
 let phoneNum  = $('#phone-num');
 let hardwareNum = $('#hardware-num');
+let phoneName = $('#phone-name');
+let phonePrice = $('#phone-price');
 let prodNames = [];
 // const dbRef = firebase.database().ref();
 // const prodRef = dbRef.child('products');
@@ -73,7 +76,7 @@ db.collection("products").get().then((querySnapshot) => {
 // }).catch((error) => {
 //     console.log("Error getting document:", error);
 // });
-
+prodArray = [];
 let docUpdate = (dbName, docName, pageRef) => {
     let docRef = db.collection(dbName).doc(docName);
     docRef.get().then((doc) => {
@@ -81,6 +84,13 @@ let docUpdate = (dbName, docName, pageRef) => {
             console.log("Document data:", doc.data());
             data = doc.data();
             num = Object.keys(data).length
+            console.log(Object.keys(data));
+            let keys = Object.keys(data).forEach((key) => {
+                // console.log(key);
+                prodArray.push(key);
+            });
+            phoneName.append(prodArray[3]);
+            console.log(prodArray);
             pageRef.append(num);
         } else {
             // doc.data() will be undefined in this case
@@ -95,3 +105,16 @@ let docUpdate = (dbName, docName, pageRef) => {
     docUpdate("products", "Beauty", beautyNum);
     docUpdate("products", "hardware", hardwareNum);
     docUpdate("products", "Phones", phoneNum);
+// let phoneRef = db.collection("products").doc("Phones").collection("Iphone 8 Plus");
+
+// phoneRef.get().then((doc) => {
+//     if (doc.exists) {
+//         console.log("Document data:", doc.data());
+//         data = doc.data();
+//     } else {
+//         // doc.data() will be undefined in this case
+//         console.log("No such document!");
+//     }
+// }).catch((error) => {
+//     console.log("Error getting document:", error);
+// });
