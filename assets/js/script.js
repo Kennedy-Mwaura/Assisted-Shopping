@@ -41,6 +41,9 @@ let phoneNum  = $('#phone-num');
 let hardwareNum = $('#hardware-num');
 let phoneName = $('#phone-name');
 let phonePrice = $('#phone-price');
+let bookName = $('#book-name');
+let bookPrice = $('#book-price');
+let bookCategory = $('#book-category');
 let prodNames = [];
 // const dbRef = firebase.database().ref();
 // const prodRef = dbRef.child('products');
@@ -57,6 +60,7 @@ db.collection("products").get().then((querySnapshot) => {
     data2.append(prodNames[1]);
     data3.append(prodNames[2]);
     data4.append(prodNames[3]);
+    bookCategory.append(prodNames[1]);
 
 });
 
@@ -76,7 +80,6 @@ db.collection("products").get().then((querySnapshot) => {
 // }).catch((error) => {
 //     console.log("Error getting document:", error);
 // });
-prodArray = [];
 let docUpdate = (dbName, docName, pageRef) => {
     let docRef = db.collection(dbName).doc(docName);
     docRef.get().then((doc) => {
@@ -85,36 +88,57 @@ let docUpdate = (dbName, docName, pageRef) => {
             data = doc.data();
             num = Object.keys(data).length
             console.log(Object.keys(data));
-            let keys = Object.keys(data).forEach((key) => {
-                // console.log(key);
-                prodArray.push(key);
-            });
-            phoneName.append(prodArray[3]);
-            console.log(prodArray);
+            
             pageRef.append(num);
+            
         } else {
             // doc.data() will be undefined in this case
             console.log("No such document!");
         }
+        
     }).catch((error) => {
         console.log("Error getting document:", error);
     });
-    }
+   
+   
 
     docUpdate("products", "Books", bookNum);
     docUpdate("products", "Beauty", beautyNum);
     docUpdate("products", "hardware", hardwareNum);
     docUpdate("products", "Phones", phoneNum);
-// let phoneRef = db.collection("products").doc("Phones").collection("Iphone 8 Plus");
+}
+let phoneRef = db.collection("products").doc("Phones");
 
-// phoneRef.get().then((doc) => {
-//     if (doc.exists) {
-//         console.log("Document data:", doc.data());
-//         data = doc.data();
-//     } else {
-//         // doc.data() will be undefined in this case
-//         console.log("No such document!");
-//     }
-// }).catch((error) => {
-//     console.log("Error getting document:", error);
-// });
+phoneRef.get().then((doc) => {
+    if (doc.exists) {
+        console.log("Phone data:", doc.data());
+        data = doc.data();
+        let keys = Object.keys(data).forEach((key) => {
+            // console.log(key);
+            phoneName.append(key);
+        }); 
+    } else {
+        // doc.data() will be undefined in this case
+        console.log("No such document!");
+    }
+}).catch((error) => {
+    console.log("Error getting document:", error);
+});
+
+let bookRef = db.collection("products").doc("Books");
+
+bookRef.get().then((doc) => { 
+    if (doc.exists) {
+        console.log("Book data:", doc.data());
+        data = doc.data();
+        let keys = Object.keys(data).forEach((key) => {
+            // console.log(key);
+            bookName.append(key);
+        });
+    } else {
+        // doc.data() will be undefined in this case
+        console.log("No such document!");
+    }
+}).catch((error) => {
+    console.log("Error getting document:", error);
+});
