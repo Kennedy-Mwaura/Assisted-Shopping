@@ -31,6 +31,9 @@ html,
     nav {
     height: 40px;
 }
+.intro-3 {
+  padding-top: 100px;
+}
 .homepage-v1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
