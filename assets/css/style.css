@@ -1,7 +1,45 @@
-/* body {
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+html,
+    body,
+    .intro-3 {
+      height: 100%;
+    }
+    @media (max-width: 450px) {
+      html,
+      body,
+      .intro-3 {
+        height: 820px;
+      }
+    }
+    @media (min-width: 451px) and (max-width: 740px) {
+      html,
+      body,
+      .intro-3 {
+        height: 900px;
+      }
+    }
+    @media (min-width: 800px) and (max-width: 850px) {
+      html,
+      body,
+      .intro-3 {
+        height: 950px;
+      }
+    }
+
+    nav {
+    height: 40px;
+}
+.homepage-v1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.about-body  {
   background-image: url(/assets/images/backgroundhp.png);
-} */
-.navbar {
+  padding-top: 200px;
+}
+.about-navbar{
   width: 1280px;
   height: 120px;
   box-shadow: 0 3px 10px black;
@@ -9,9 +47,8 @@
   line-height: 50px;
   background-color: whitesmoke;
 }
+
 .logo img {
-  width: 300px;
-  height: 120px;
   float: left;
 }
 .menu {
@@ -40,10 +77,10 @@ h1 {
 img {
   float: right;
 }
-span {
+span-1 {
   font-size: 70px;
 }
-p {
+.about {
   text-align: center;
   font-family: "Kotta One", serif;
 }
@@ -53,12 +90,20 @@ button {
   padding: 15px;
 }
 .heading {
+  padding: 100px;
   height: 200px;
 }
 .image-control {
   width: 100%;
   height: 600px;
   text-align: center;
+}
+.txt {
+  text-align: center;
+}
+.learn-more {
+  text-align: center;
+  padding-bottom: 200px;
 }
 #shopping {
   float: left;
@@ -83,7 +128,7 @@ button {
 #row1 {
   display: flex;
   justify-content: center;
-
+  padding-top: 200px;
   align-content: center;
 }
 #input1 {
