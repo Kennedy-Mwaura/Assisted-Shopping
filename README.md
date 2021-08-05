@@ -1,13 +1,15 @@
 # Assisted-Shopping
+
 This a group 5 project for week 5. Creating a platform to recommend vendors based on products.
 
-![logo](assets/images/Assisted%20Shopping%20Logo%20(1).png)
+![logo](assets/images/Assisted%20Shopping%20Logo-cropped.png)
 
-## Design 
+## Design
 
 [Figma](https://www.figma.com/) was used to design the app. Get [design here.](https://www.figma.com/file/Pta0FahdKJ2MKb3sA0cV4n/Figma-Website-Template---Landie-Demo-(Community)?node-id=345%3A5)
 
-## Authors.
+## Authors
+
 Group 5 which consist of:
   1.Kennedy Mwaura.
 
@@ -19,14 +21,16 @@ Group 5 which consist of:
 
   5.Julie Muturi.
   
-# Short Description.
-Finding the right site online to buy products can be a huge hustle. 
-Most often, the available sites offer exorbitant prices that would most likely not be feasible in a middle-class to lower-class home. 
+## Short Description
+
+Finding the right site online to buy products can be a huge hustle.
+Most often, the available sites offer exorbitant prices that would most likely not be feasible in a middle-class to lower-class home.
 What if you had an application where you could find the right site online and also be able to save on money in the process?
-                    
+
 Introducing Assisted Shopping. The application  that allows you to obtain products at the lowest prices from the best sites online.
 
-## Technologies Used.
+## Technologies Used
+
 1.HTML
 
 2.CSS3 (Material Bootstrap)
@@ -34,10 +38,13 @@ Introducing Assisted Shopping. The application  that allows you to obtain produc
 3.JavaScript.
 
 4.Firebase.(Firestore)
-## Live site 
+
+## Live site
+
 Check [live version here](https://kennedy-mwaura.github.io/Assisted-Shopping)
 
-# License
+## License
+
 MIT License
 
 Copyright (c) 2021
@@ -59,6 +66,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-                    
-  
