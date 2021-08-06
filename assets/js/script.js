@@ -111,6 +111,7 @@ docUpdate("products", "Books", bookNum);
 docUpdate("products", "Beauty", beautyNum);
 docUpdate("products", "hardware", hardwareNum);
 docUpdate("products", "Phones", phoneNum);
+
 let phoneRef = db.collection("products").doc("Phones");
 
 phoneRef.get().then((doc) => {
@@ -156,6 +157,7 @@ beautyRef.get().then((doc) => {
         let keys = Object.keys(data).forEach((key) => {
             // console.log(key);
             beautyName.append(key);
+            
         });
     } else {
         // doc.data() will be undefined in this case
@@ -164,3 +166,21 @@ beautyRef.get().then((doc) => {
 }).catch((error) => {
     console.log("Error getting document:", error);
 });
+phoneId = 'Iphone 8 Plus';
+storeRef = phoneRef.collection(phoneId).doc();
+let batch = db.batch();
+console.log(storeRef)
+// storeRef.get().then((doc) => {  
+//     if (doc.exists) {
+//         console.log("Store data:", doc.data());
+//         data = doc.data();
+//         phonePrice.append(data.price);
+//         phoneCategory.append(data.category);
+//     } else {
+//         // doc.data() will be undefined in this case
+//         console.log("No such document!");
+//     }
+// }).catch((error) => {
+//     console.log("Error getting document:", error);
+// });
+// console.log(storeRef);
